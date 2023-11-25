@@ -1,5 +1,7 @@
 body{
     background-image: url(Assets/Dotted\ Black\ BG.png);
+    margin: 0px;
+    padding: 0px;
 }
 .Development-text{
     color: #FFCF11;

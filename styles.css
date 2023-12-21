@@ -1,16 +1,25 @@
 body{
-    background-image: url(Assets/Dotted\ Black\ BG.png);
-    margin: 0px;
-    padding: 0px;
+    background-color: black;
+    cursor: none;
 }
-.Development-text{
-    color: #FFCF11;
-    font-size: 50px;
-    font-family: 'Cinzel';
-    font-weight: bold;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
 }

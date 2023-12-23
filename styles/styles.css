@@ -1,6 +1,10 @@
 body{
     background-color: black;
     cursor: none;
+    height: 2000px;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 .cursor-outline{
@@ -21,8 +25,39 @@ body{
     transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 1;
-    pointer-events: no
+    pointer-events: none
 }
+
+.header-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background : rgba(7, 7, 7 , 0.5);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.socials{
+    position: fixed;
+    top: 415px;
+    left: 25px;
+
+}
+.socials-sidebar{
+    display: grid;
+    row-gap: 30px;
+}
+.socials-sidebar a img{
+    height: 22px;
+    cursor: none;
+}
+
 .under-development{
     display: flex;
     justify-content: center;

@@ -14,8 +14,29 @@
 }
 .naveen-logo{
     height: 65px;
-    margin-left: 170px;
+    margin-left: 170px; 
 }
+
+.image-text{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    font-weight: 300;
+
+    position: fixed;
+    top: 20px;
+    left: -20px;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.5s  ease-in;
+}
+.left-space:hover .image-text{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(260px);   
+}
+
 .right-space{
     display: flex;
 }

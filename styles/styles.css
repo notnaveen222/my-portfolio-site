@@ -43,6 +43,8 @@ body::-webkit-scrollbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    opacity: 0;
+    animation: opac-in 2s forwards;
 }
 .socials{
     position: fixed;
@@ -53,6 +55,8 @@ body::-webkit-scrollbar{
 .socials-sidebar{
     display: grid;
     row-gap: 30px;
+    transform: translateX(-200px);
+    animation: slide-ltor 0.3s 0.9s forwards;
 }
 .socials-sidebar a img{
     height: 22px;
@@ -154,6 +158,12 @@ body::-webkit-scrollbar{
     display: block;
     transition: color 0.3s ease-in-out;
     margin-bottom: 25px;
+    animation: welcome-anime 0.8s ease-out;
+    transition: letter-spacing 0.5s;
+
+}
+.Welcome-text:hover{
+    letter-spacing: 3px;
 }
 .intro-text{
     width: 650px;
@@ -164,23 +174,15 @@ body::-webkit-scrollbar{
     color: white;
     display: block;
     transition: color 0.3s ease-in-out;
-
     margin-bottom: 20px;
+    animation: opac-in 0.5s 1s forwards;
+    opacity: 0;
 }
-
+.wave-emoji{
+    animation: wave-emoji-rot 2s;
+}
 
 .under-development span:hover {
     color: white;
 }
 
-
-@keyframes fadein {
-    from{
-        opacity: 0;
-    }
-
-    to{
-        opacity: 0.1;
-    }
-    
-}

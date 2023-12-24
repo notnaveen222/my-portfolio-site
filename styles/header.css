@@ -15,6 +15,7 @@
 .naveen-logo{
     height: 65px;
     margin-left: 170px; 
+    animation: fade-up 0.8s ;
 }
 
 .image-text{
@@ -39,4 +40,5 @@
 
 .right-space{
     display: flex;
+    animation: fade-up 0.8s ;
 }

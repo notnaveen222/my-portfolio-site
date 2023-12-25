@@ -13,10 +13,76 @@
     border-width: 1px;
 }
 #grid-row-3{
+    padding: 160px 175px 0px 175px;
     background-color: none;
-    border: solid;
-    border-color: white;
-    border-width: 1px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.G3-Left{
+    display: grid;
+    grid-template-rows: 100px 1fr 100px 1fr;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+}
+.G3L-Heading{
+    font-size: 45px;
+    color: white;
+    animation: fade-up 0.5s;
+}
+.about-head{
+    padding-top: 10px;
+    
+}
+.G3L-Bio{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 50px;
+    opacity: 0;
+    animation: opac-in 0.5s 0.5s forwards;
+}
+.stack-tag{
+    display: inline;
+    color: white;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 25px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: rgba(146, 154, 171,0.3);
+    opacity: 0;
+    animation: opac-in 0.5s 0.5s forwards;
+}
+.stack-tag:hover{
+    background-color: white;
+    color: rgb(146,154,171);
+
+}
+.memoji{
+    margin-left: 200px;
+    margin-top: 80px;
+}
+.memojinote{
+    color: white;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 270px;
+}
+.memojinote:hover + .memojihover{
+    opacity: 1;
+}
+.memojihover{
+    color: white;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 150px;
+    margin-right: 90px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 #grid-row-4{
     display: grid;

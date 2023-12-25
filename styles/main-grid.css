@@ -1,0 +1,89 @@
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1010px 1010px 1010px 1010px;
+}
+#grid-row-1{
+    overflow: hidden;
+}
+#grid-row-2{
+    background-color: none;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}
+#grid-row-3{
+    background-color: none;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}
+#grid-row-4{
+    display: grid;
+    grid-template-rows: 1fr 250px;
+    padding: 0px 175px 0px 175px;
+    margin: 0px;
+}
+.CRline{
+    align-self: flex-end;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    padding: 30px 60px 10px 60px;
+    color: white;
+    font-size: 20px;
+    /* border-top: solid; */
+    animation: fade-up 0.8s;
+}
+
+.hello-text{
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    animation: welcome-anime 0.5s;
+}
+.contact-mail{
+    color: white;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    margin: 200px 60px 20px 60px;
+    border-color: rgba(112, 112, 112,0.2);
+    border-width: 1px;
+    background-image: url('../Assets/Background/workspace-bg-b70.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.Background-image-cntct{
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.mail{
+    font-size: 50px;  
+    opacity: 0;
+    /* backdrop-filter: blur(10px); */
+    text-shadow: rgb(255, 255, 255) 1px 0 5px;
+    animation: opac-in 0.5s forwards;
+}
+.mail::after{
+    content: '';
+    width: 0px;
+    height: 2px;
+    margin-top: 6px;
+    display: block;
+    background: white;
+    transition: 0.3s;
+  }
+.mail:hover::after{
+    width: 100%;
+
+}

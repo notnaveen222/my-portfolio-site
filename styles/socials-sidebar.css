@@ -1,0 +1,23 @@
+.socials{
+    position: fixed;
+    top: 415px;
+    left: 25px;
+
+}
+.socials-sidebar{
+    display: grid;
+    row-gap: 30px;
+    transform: translateX(-200px);
+    animation: slide-ltor 0.3s 0.9s forwards;
+}
+.socials-sidebar a img{
+    height: 22px;
+    cursor: none;
+    transition: height 0.2s;
+}
+.socials-sidebar a img:hover{
+    height: 30px;
+}
+.socials-sidebar a{
+    cursor: none;
+}

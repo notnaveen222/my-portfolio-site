@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header.css  ">
     <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/main-grid.css">
+    <link rel="stylesheet" href="styles/socials-sidebar.css">
     <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +21,12 @@
     <div class="cursor-outline" data-cursor-outline></div>
     <div class="header-bar">
         <div class="left-space">
-            <img class="naveen-logo" src="Assets/icons/naveen_logo-95.png" alt="Naveen_Logo">
+            <img class="naveen-logo" onclick="scrollToSection('grid-row-1')" src="Assets/icons/naveen_logo-95.png" alt="Naveen_Logo">
             <p class="image-text">NAVEEN</p>
         </div>
         <div class="right-space">
-            <div class="project header-btn">Projects</div>
-            <div class="contact header-btn">Contact</div>
+            <div class="project header-btn" >Projects</div>
+            <div class="contact header-btn" onclick="scrollToSection('grid-row-4')">Contact</div>
         </div>
     </div>
     
@@ -42,32 +44,52 @@
             <a href="https://github.com/notnaveen222" target="_blank"   >
                 <img src="Assets/icons/github-w.png" alt="Github">
             </a>
-    
+            
         </div>
     </div>
-    <div class="background-shapes">
-        <img class="circle c1" src="Assets/icons/circle-w.png" alt="">
-        <img class="circle c2" src="Assets/icons/circle-w.png" alt="">
-        <img class="circle c3" src="Assets/icons/circle-w.png" alt="">
-        <img class="triangle t1" src="Assets/icons/triangle-w.png" alt="">
-        <img class="triangle t2" src="Assets/icons/triangle-w.png" alt="">
-        <img class="triangle t3" src="Assets/icons/triangle-w.png" alt="">
-        <img class="square s1" src="Assets/icons/square-w.png" alt="">
-        <img class="square s2" src="Assets/icons/square-w.png" alt="">
-    </div>
+
+    <div class="main-grid">
+        <div id="grid-row-1">
+            <div class="background-shapes">
+                <img class="circle c1" src="Assets/icons/circle-w.png" alt="">
+                <img class="circle c2" src="Assets/icons/circle-w-cropped.png" alt="">
+                <img class="circle c3" src="Assets/icons/circle-w.png" alt="">
+                <img class="triangle t1" src="Assets/icons/triangle-w.png" alt="">
+                <img class="triangle t2" src="Assets/icons/triangle-w.png" alt="">
+                <img class="triangle t3" src="Assets/icons/triangle-w.png" alt="">
+                <img class="square s1" src="Assets/icons/square-w.png" alt="">
+                <img class="square s2" src="Assets/icons/square-w.png" alt="">
+            </div>
+        
+            <div class="under-development">
+                <div class="Welcome-text">Welcome to my space.</div>
+                <div class="intro-text"><span class="wave-emoji">👋</span> Hi! My Name is Naveen and I'm a upcoming developer <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Currently a student at VIT Chennai College</div>
+                
+            </div>
     
+        </div>
+        <div id="grid-row-2">
+        </div>
+        <div id="grid-row-3">
+        </div>
+        <div id="grid-row-4">
+            <div class="contact-mail">
+                <!-- <img class="Background-image-cntct" src="Assets/Background/contact-bg.jpg" alt=""> -->
+                <div class="hello-text">Say Hello</div>
+                <div class="mail">itsnotnaveen@gmail.com</div>
+            </div>
+            <div class="footer">
+                <div>Developer</div>
+                <div class="CRline">©Naveen . All Rights Reserved</div>
+                <div >Based in India</div>
+
+            </div>
+        </div>
+        
     
-    
-    
-    
-    
-    
-    <div class="under-development">
-        <div class="Welcome-text">Welcome to my space.</div>
-        <div class="intro-text"><span class="wave-emoji">👋</span> Hi! My Name is Naveen and I'm a upcoming developer <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> Currently a student at VIT Chennai College</div>
         
     </div>
-    
+
 
     
     

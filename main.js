@@ -16,3 +16,9 @@ window.addEventListener("mousemove",function (e){
     top: `${posY}px`
    }, { duration: 500, fill: "forwards"});
 });
+
+function scrollToSection(section) {
+   var section = document.getElementById(section);
+   section.scrollIntoView({ behavior: 'smooth' });
+   // Add your desired functionality here
+ }

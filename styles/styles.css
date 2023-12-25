@@ -1,7 +1,7 @@
 body{
     background-color: black;
     cursor: none    ;
-    height: 2000px;
+    margin: 0px;
 }
 body::-webkit-scrollbar{
     display: none;
@@ -45,22 +45,6 @@ body::-webkit-scrollbar{
     align-items: center;
     opacity: 0;
     animation: opac-in 2s forwards;
-}
-.socials{
-    position: fixed;
-    top: 415px;
-    left: 25px;
-
-}
-.socials-sidebar{
-    display: grid;
-    row-gap: 30px;
-    transform: translateX(-200px);
-    animation: slide-ltor 0.3s 0.9s forwards;
-}
-.socials-sidebar a img{
-    height: 22px;
-    cursor: none;
 }
 .backgroud-shapes{
     z-index: 5;
@@ -148,7 +132,7 @@ body::-webkit-scrollbar{
     align-items: start;
     justify-content: end;
     height: 875px;
-    padding-left: 170px;
+    padding-left: 175px;
     padding-bottom: 200px;
 }
 .Welcome-text{
@@ -185,4 +169,3 @@ body::-webkit-scrollbar{
 .under-development span:hover {
     color: white;
 }
-

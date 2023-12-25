@@ -22,3 +22,4 @@ function scrollToSection(section) {
    section.scrollIntoView({ behavior: 'smooth' });
    // Add your desired functionality here
  }
+

@@ -166,6 +166,7 @@ body::-webkit-scrollbar{
     margin-bottom: 20px;
     animation: opac-in 0.5s 1s forwards;
     opacity: 0;
+    
 }
 .wave-emoji{
     animation: wave-emoji-rot 2s;

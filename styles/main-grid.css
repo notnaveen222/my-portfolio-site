@@ -2,39 +2,36 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1010px 1010px 1010px 1010px;
+
 }
 #grid-row-1{
     overflow: hidden;
+
 }
+
 #grid-row-2{
-    background-color: none;
-    border: solid;
-    border-color: white;
-    border-width: 1px;
-}
-#grid-row-3{
     padding: 160px 175px 0px 175px;
     background-color: none;
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
-.G3-Left{
+.G2-Left{
     display: grid;
     grid-template-rows: 100px 1fr 100px 1fr;
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 
 }
-.G3L-Heading{
+.G2L-Heading{
     font-size: 45px;
     color: white;
-    animation: fade-up 0.5s;
+    animation: fade-up 0.5s forwards;
 }
 .about-head{
     padding-top: 10px;
     
 }
-.G3L-Bio{
+.G2L-Bio{
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     color: white;
@@ -65,12 +62,18 @@
 .memoji{
     margin-left: 200px;
     margin-top: 80px;
+
+    opacity: 0;
+    animation: opac-in 0.5s 0.5s forwards;
+    
 }
 .memojinote{
     color: white;
     font-family:  'Montserrat', sans-serif;
     font-size: 20px;
     margin-left: 270px;
+    opacity: 0;
+    animation: opac-in 0.5s 0.5s forwards;
 }
 .memojinote:hover + .memojihover{
     opacity: 1;
@@ -84,6 +87,102 @@
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
+}
+
+#grid-row-3{
+    background-color: none;
+    padding: 100px 175px 0px 175px;
+
+    display: grid;
+    grid-template-rows: 1fr 200px;
+}
+.G3-Heading{
+    padding-top: 10px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: 45px;
+    color: white;
+    animation: fade-up 0.5s;
+}
+.G3-topGrid{
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    
+}
+.project-box{
+    height: 450px;
+    width: 1200px;
+    margin: 35px 20px 20px 20px;
+    place-self: center;
+
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 400px 1fr;
+
+    opacity: 0;
+    filter: blur(1.5rem);
+    animation: opac-in 0.5s 0.5s forwards, blurin 0.5s 0.5s forwards;
+    
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 20px 20px;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+    border-right: solid 2px white;
+    
+}
+.project-title{
+    color: white;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.project-shortDesc{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight:400;
+    margin-bottom: 30px;
+}
+.project-visit{
+    width: 130px;
+    color: white;
+    font-size: 25px;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
+    border-radius: 9px;
+    padding: 10px 5px 10px 15px;
+    margin-top: auto;
+    transition: transform 0.2s;
+    cursor: no-drop;
+}
+.project-visit:hover{
+    transform: translateY(-6px);
+}
+.project-visit img{
+    height: 20px;
+    filter: invert(1);
+    vertical-align: middle;
+    padding: 0px;
+
+}
+.project-image{
+    background-image: url("../Assets/projects-thumbnail/portfolio-site.png");
+    background-size: cover;
+    background-position: center;
+
+}
+.G3-bottomGrid{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 170px;
+    font-size: 20px;
 }
 #grid-row-4{
     display: grid;

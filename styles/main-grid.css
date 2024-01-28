@@ -41,6 +41,7 @@
     opacity: 0;
     animation: opac-in 0.5s 0.5s forwards;
 }
+
 .stack-tag{
     display: inline;
     color: white;
@@ -53,6 +54,7 @@
     background-color: rgba(146, 154, 171,0.3);
     opacity: 0;
     animation: opac-in 0.5s 0.5s forwards;
+    margin-bottom: 60px;
 }
 .stack-tag:hover{
     background-color: white;
@@ -172,10 +174,23 @@
     padding: 0px;
 
 }
+.pv2{
+    cursor: none;
+    text-decoration: none;
+    margin-top: -30px;
+}
 .project-image{
     background-image: url("../Assets/projects-thumbnail/portfolio-site.png");
     background-size: cover;
     background-position: center;
+
+}
+.project-image2{
+    background-image: url("../Assets/projects-thumbnail/QRC/QRCGen-DarkMode.png");
+    background-size: cover;
+    background-position: center;
+
+    transition: background-image 0.3s ease;
 
 }
 .G3-bottomGrid{

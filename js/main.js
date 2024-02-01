@@ -20,7 +20,6 @@ window.addEventListener("mousemove",function (e){
 function scrollToSection(section) {
    var section = document.getElementById(section);
    section.scrollIntoView({ behavior: 'smooth' });
-   // Add your desired functionality here
  }
 
 
@@ -32,7 +31,7 @@ function scrollToSection(section) {
 ]
    setInterval(() => {
       QrcImg.style.backgroundImage = urls[image];
-      image = (image + 1) % urls.length; // Increment image index, loop back to 0 if at the end
+      image = (image + 1) % urls.length;
    }, 2000);
  }
 
